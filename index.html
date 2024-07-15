@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <video autoplay muted loop id="backgroundVideo">
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+
+    <audio id="winSound" src="congratulations.mp4"></audio>
+<audio id="drawSound" src="drawmatch.mp4"></audio>
+    <!-- Modal -->
+<div id="winnerModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p id="winnerMessage"></p>
+        <div class="stars">
+            <div class="star">***********</div>
+        </div>
+        <button id="restartGameBtn">Restart Game</button>
+        <button id="newGameBtn">New Game</button>
+    </div>
+</div>
+
+    <div class="container">
+        <h1>Tic-Tac-Toe</h1>
+        <div class="players">
+            <input type="text" id="player1" placeholder="Player 1 Name" />
+            <input type="text" id="player2" placeholder="Player 2 Name" />
+           
+        </div>
+        <button id="startGameBtn">Start Game</button>
+        <div class="board" id="board">
+            <div class="cell" data-index="0"></div>
+            <div class="cell" data-index="1"></div>
+            <div class="cell" data-index="2"></div>
+            <div class="cell" data-index="3"></div>
+            <div class="cell" data-index="4"></div>
+            <div class="cell" data-index="5"></div>
+            <div class="cell" data-index="6"></div>
+            <div class="cell" data-index="7"></div>
+            <div class="cell" data-index="8"></div>
+        </div>
+        <button id="restartBtn">Restart Game</button>
+        <p id="status"></p>
+    </div>
+
+    <!-- Modal -->
+    <div id="winnerModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="winnerMessage"></p>
+            <div class="stars">
+                
+            </div>
+        </div>
+    </div>
+    <audio id="winSound">
+        <source src="congratulations.mp4" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <script src="script.js"></script>
+</body>
+</html>
